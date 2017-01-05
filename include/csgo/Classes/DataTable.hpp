@@ -5,7 +5,7 @@ struct CRecvProxyData;
 class RecvProp;
 class RecvTable;
 
-typedef void (__cdecl *RecvVarProxyFn) (const CRecvProxyData*, void*, void*);
+typedef void (*RecvVarProxyFn) (const CRecvProxyData*, void*, void*);
 
 struct DVariant {
 	union {
@@ -14,7 +14,7 @@ struct DVariant {
 		char* m_pString;
 		void* m_pData;
 		float m_Vector[3];
-		__int64 m_Int64;
+		int64_t m_Int64;
 	};
 
 	int	m_Type;

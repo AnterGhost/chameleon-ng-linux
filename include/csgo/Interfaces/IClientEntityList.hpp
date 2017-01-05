@@ -1,7 +1,5 @@
 #pragma once
 
-#define VCLIENTENTITYLIST_INTERFACE_VERSION "VClientEntityList003"
-
 class IClientEntity;
 class IClientUnknown;
 class IClientNetworkable;

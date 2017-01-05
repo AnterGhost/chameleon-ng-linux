@@ -1,5 +1,5 @@
-#include "imgui.h"
-#include "imgui_impl_sdl.h"
+#include <imgui/imgui.h>
+#include <imgui/examples/imgui_impl_sdl.h>
 
 static double g_Time = 0.0f;
 static bool g_MousePressed[3] = {false, false, false};

@@ -1,7 +1,5 @@
 #pragma once
 
-#define CLIENT_DLL_INTERFACE_VERSION "VClient018"
-
 enum ClientFrameStage_t: int {
 	FRAME_UNDEFINED = -1,
 	FRAME_START,
@@ -18,7 +16,7 @@ class ClientClass;
 class IBaseClientDLL {
 	public:
 		inline ClientClass* GetAllClasses() {
-			return GetVirtualFunction<ClientClass*(__thiscall *)(IBaseClientDLL*)>(this, 8)(this);
+			return GetVirtualFunction<ClientClass*(*)(IBaseClientDLL*)>(this, 8)(this);
 		}
 };
 

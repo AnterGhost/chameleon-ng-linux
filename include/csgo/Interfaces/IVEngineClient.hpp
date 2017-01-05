@@ -1,7 +1,5 @@
 #pragma once
 
-#define VENGINE_CLIENT_INTERFACE_VERSION "VEngineClient014"
-
 #define MAX_PLAYER_NAME_LENGTH 32
 #define SIGNED_GUID_LEN 32
 
@@ -30,28 +28,28 @@ typedef struct player_info_s {
 
 class IVEngineClient {
 	public:
-		inline bool GetPlayerInfo(int Index, player_info_t* PlayerInfo) {
-			return GetVirtualFunction<bool(__thiscall *)(IVEngineClient*, int, player_info_t*)>(this, 8)(this, Index, PlayerInfo);
+		inline bool GetPlayerInfo(int index, player_info_t* playerinfo) {
+			return GetVirtualFunction<bool(*)(IVEngineClient*, int, player_info_t*)>(this, 8)(this, index, playerinfo);
 		}
 
-		inline int GetPlayerForUserID(int UserID) {
-			return GetVirtualFunction<bool(__thiscall *)(IVEngineClient*, int)>(this, 9)(this, UserID);
+		inline int GetPlayerForUserID(int userid) {
+			return GetVirtualFunction<bool(*)(IVEngineClient*, int)>(this, 9)(this, userid);
 		}
 
 		inline int GetLocalPlayer() {
-			return GetVirtualFunction<int(__thiscall *)(IVEngineClient*)>(this, 12)(this);
+			return GetVirtualFunction<int(*)(IVEngineClient*)>(this, 12)(this);
 		}
 
 		inline bool IsInGame() {
-			return GetVirtualFunction<bool(__thiscall *)(IVEngineClient*)>(this, 26)(this);
+			return GetVirtualFunction<bool(*)(IVEngineClient*)>(this, 26)(this);
 		}
 
 		inline bool IsConnected() {
-			return GetVirtualFunction<bool(__thiscall *)(IVEngineClient*)>(this, 27)(this);
+			return GetVirtualFunction<bool(*)(IVEngineClient*)>(this, 27)(this);
 		}
 
 		void ClientCmd_Unrestricted(const char* command, bool delayed = false) {
-			return GetVirtualFunction<void(__thiscall *)(IVEngineClient*, const char*, bool)>(this, 114)(this, command, delayed);
+			return GetVirtualFunction<void(*)(IVEngineClient*, const char*, bool)>(this, 114)(this, command, delayed);
 		}
 };
 

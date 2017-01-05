@@ -29,11 +29,11 @@ class IClientNetworkable {
 		virtual ~IClientNetworkable() {};
 
 		inline ClientClass* GetClientClass() {
-			return GetVirtualFunction<ClientClass*(__thiscall *)(IClientNetworkable*)>(this, 2)(this);
+			return GetVirtualFunction<ClientClass*(*)(IClientNetworkable*)>(this, 2)(this);
 		}
 		
-		inline const int GetIndex() {
-			return GetVirtualFunction<int(__thiscall *)(IClientNetworkable*)>(this, 9)(this);
+		inline int GetIndex() {
+			return GetVirtualFunction<int(*)(IClientNetworkable*)>(this, 9)(this);
 		}
 };
 

@@ -1,7 +1,5 @@
 #pragma once
 
-#define INTERFACEVERSION_GAMEEVENTSMANAGER2 "GAMEEVENTSMANAGER002"
-
 struct bf_read;
 struct bf_write;
 

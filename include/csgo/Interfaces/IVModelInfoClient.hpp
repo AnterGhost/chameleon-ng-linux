@@ -1,7 +1,5 @@
 #pragma once
 
-#define VMODELINFO_CLIENT_INTERFACE_VERSION "VModelInfoClient004"
-
 struct model_t;
 
 class IVModelInfoClient {
