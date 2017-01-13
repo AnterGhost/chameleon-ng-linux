@@ -15,6 +15,7 @@
 #include "Interfaces/IGameEventManager2.hpp"
 #include "Interfaces/IVEngineClient.hpp"
 #include "Interfaces/IVModelInfoClient.hpp"
+#include "Interfaces/ILauncherMgr.hpp"
 
 #include "Utilities/NetVars.hpp"
 
