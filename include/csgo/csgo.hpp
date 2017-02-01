@@ -9,6 +9,7 @@
 #include "Classes/ClientClass.hpp"
 #include "Classes/IGameEvent.hpp"
 #include "Classes/IClientEntity.hpp"
+#include "Classes/CBaseClientState.hpp"
 
 #include "Interfaces/IBaseClientDLL.hpp"
 #include "Interfaces/IClientEntityList.hpp"
