@@ -55,7 +55,7 @@ const std::unordered_map<size_t, Item_t> ItemDefinitionIndex = {
 	{47, {"Decoy Grenade", "WEAPON_DECOY", "models/weapons/v_eq_decoy.mdl", "decoy"}},
 	{48, {"Incendiary Grenade", "WEAPON_INCGRENADE", "models/weapons/v_eq_incendiarygrenade.mdl", "inferno"}},
 	{49, {"C4 Explosive", "WEAPON_C4", "models/weapons/v_ied.mdl"}},
-	{59, {"Knife (Terrorists)", "WEAPON_KNIFE_T", "models/weapons/v_knife_default_t.mdl", "knife_t"}},
+	{59, {"Knife (Terrorists)", "WEAPON_KNIFE_T", "models/weapons/v_knife_default_t.mdl", "knife_default_t"}},
 	{60, {"M4A1-S", "WEAPON_M4A1_SILENCER", "models/weapons/v_rif_m4a1_s.mdl", "m4a1_silencer"}},
 	{61, {"USP-S", "WEAPON_USP_SILENCER", "models/weapons/v_pist_223.mdl", "usp_silencer"}},
 	{63, {"CZ75 Auto", "WEAPON_CZ75A", "models/weapons/v_pist_cz_75.mdl", "cz75a"}},
